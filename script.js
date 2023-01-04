@@ -5,13 +5,17 @@
   const footer = document.querySelector('.footer');
   const buttonSpan = document.querySelector('.js-buttonSpan');
 
+  const spanButtonChange = () => {
+    header.classList.contains('bright')
+      ? (buttonSpan.innerText = 'Wyłącz')
+      : (buttonSpan.innerText = 'Włącz');
+  };
+
   button.addEventListener('click', () => {
     header.classList.toggle('bright');
     main.classList.toggle('bright');
     footer.classList.toggle('bright');
 
-    header.classList.contains('bright')
-      ? (buttonSpan.innerText = 'Wyłącz')
-      : (buttonSpan.innerText = 'Włącz');
+    spanButtonChange(header);
   });
 }
