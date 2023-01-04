@@ -13,12 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/article.css" />
     <link rel="stylesheet" href="./css/table.css" />
     <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/sectionLink.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,42 +32,101 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#headerHeader" class="nav__link">Kostka Rubika</a>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#headerAbout">O mnie</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#mainHeader">Kostka Rubika</a>
         </li>
 
-        <li class="nav__item">
-          <a class="nav__link" href="#mainHeader">Zasady i mechanika gry</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#mainArticle"
+            >Zasady i mechanika gry</a
+          >
         </li>
 
-        <li class="nav__item">
-          <a class="nav__link" href="#mainArticle">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#mainSection">
             Najpopularniejsze techniki układania Kostki Rubika</a
           >
         </li>
 
-        <li class="nav__item">
-          <a class="nav__link" href="#footerHeader"> Moja kolekcja </a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#articleHeader"> Moja kolekcja </a>
         </li>
       </ul>
     </nav>
 
-    <header class="header dark">
-      <h1 class="header__header" id="headerHeader">Kostka Rubika</h1>
-      <section class="header__section">
-        Kostka Rubika (węg. Bűvös kocka – „magiczna kostka”) – zabawka logiczna
-        wynaleziona przez Ernő Rubika w 1974 roku, a w 1976 roku skonstruowana i
-        opatentowana w Japonii przez inżyniera Terutoshiego Ishige. Wynalazca
-        kostki Ernő Rubik po raz pierwszy układał kostkę przez miesiąc. Do
-        Polski zabawka trafiła w 1980.
-      </section>
+    <header class="header dark" id="headerAbout">
+      <button class="button js-button">
+        <span class="button__span js-buttonSpan">Włącz</span> jasne sekcje
+      </button>
+      <h1 class="header__header">Mateusz Wąsik</h1>
+      <img
+        class="header__image"
+        src="./img/59150257.jpg"
+        alt="Mateusz Wąsik - zdjęcie"
+      />
+      <h2 class="header__header--second">O mnie</h2>
+      <p>
+        <strong>Hej!</strong>
+        Aktualnie jestem studentem pierwszego roku na
+        <b>Uniwersytecie Marii Curie-Skłodowskiej w Lublinie</b>
+      </p>
+      <ol>
+        <li>
+          <p>
+            Lubię <em>japońską</em> motoryzacją oraz interesuję się
+            <em>fotografią</em>.
+          </p>
+        </li>
+        <li>
+          <p>Pasjonuję się rówież układaniem kostek <strong>Rubika.</strong></p>
+        </li>
+        <li>
+          <p class="header__quote">Moje ulubione cytaty to:</p>
+          <ul>
+            <li>
+              <i>
+                "Fotografia jest najprostrzą rzeczą na świecie, ale jest bardzo
+                skomplikowana, żeby naprawdę działała."
+              </i>
+            </li>
+            <li>
+              <i>
+                “Zdjęcie to wyrażanie wrażeń. Jeżeli piękno nie będzie istnieć w
+                nas samych, to jak w ogóle będziemy mogli je zauważyć? ”
+              </i>
+            </li>
+            <li>
+              <i>
+                “Odkryłem, że choć aparat fotograficzny nie może wyrazić duszy,
+                to może to zrobić fotografujący!”
+              </i>
+            </li>
+          </ul>
+        </li>
+      </ol>
     </header>
 
     <main class="main dark">
-      <h2 class="main__header" id="mainHeader">Zasady i mechanika gry</h2>
       <section class="main__section">
+        <h2 class="main__header--second" id="mainHeader">Kostka Rubika</h2>
+        <p>
+          Kostka Rubika (węg. Bűvös kocka – „magiczna kostka”) – zabawka
+          logiczna wynaleziona przez Ernő Rubika w 1974 roku, a w 1976 roku
+          skonstruowana i opatentowana w Japonii przez inżyniera Terutoshiego
+          Ishige. Wynalazca kostki Ernő Rubik po raz pierwszy układał kostkę
+          przez miesiąc. Do Polski zabawka trafiła w 1980.
+        </p>
+      </section>
+
+      <h2 class="main__header--second" id="mainArticle">
+        Zasady i mechanika gry
+      </h2>
+      <article class="main__article">
         <p>
           Zabawa kostką polega na takim ułożeniu kwadratów, aby na każdej
           ścianie wszystkie posiadały jeden kolor. Składa się ona z 26
@@ -74,8 +135,8 @@
           danej warstwy i przechodzącej przez środek kostki. Liczba kombinacji
           różnych ułożeń kostki 3x3x3 wynosi ponad 43 tryliony!
         </p>
-      </section>
-      <article class="main__article" id="mainArticle">
+      </article>
+      <section class="main__section" id="mainSection">
         <p>Najpopularniejsze techniki układania Kostki Rubika:</p>
         <ul>
           <li>LBL (metoda dla początkujących),</li>
@@ -109,69 +170,98 @@
           <a
             href="//pl.wikipedia.org/wiki/Kostka_Rubika"
             target="_blank"
-            class="main__sourceLink"
-            >wikipedia.org</a
+            class="section__link"
+            >wikipedia.org/Kostka_Rubika</a
           >
         </p>
-      </article>
+      </section>
     </main>
 
-    <footer class="footer dark">
-      <h2 class="footer__header" id="footerHeader">Moja kolekcja</h2>
-      <section class="footer__section" id="footerSection">
-        <table class="table">
-          <div class="table__wrapper">
-            <caption class="table__caption">
-              Personalna kolekcja i umiejętności
-            </caption>
-            <tr class="table__row">
-              <th class="table__cell table__header" scope="col">
-                Nazwa kostki
-              </th>
-              <th class="table__cell table__header" scope="col">Posiadam</th>
-              <th class="table__cell table__header" scope="col">
-                Trzymalem w rece
-              </th>
-              <th class="table__cell table__header" scope="col">
-                Umiem ułżyć?
-              </th>
-            </tr>
-            <tr class="table__row">
-              <th class="table__cell table__header" scope="row">2x2</th>
-              <td class="table__cell">❌</td>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">✅/❌</td>
-            </tr>
-            <tr class="table__row">
-              <th class="table__cell table__header" scope="row">3x3</th>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">✅(PB 18.98)</td>
-            </tr>
-            <tr class="table__row">
-              <th class="table__cell table__header" scope="row">4x4</th>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">✅/❌</td>
-            </tr>
-            <tr class="table__row">
-              <th class="table__cell table__header" scope="row">5x5</th>
-              <td class="table__cell">❌</td>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">❌</td>
-            </tr>
-            <tr class="table__row">
-              <th class="table__cell table__header" scope="row">Pyraminx</th>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">✅</td>
-              <td class="table__cell">❌</td>
-            </tr>
-          </div>
-        </table>
-      </section>
-      <button class="button js-button">
-        <span class="button__span js-buttonSpan">Włącz</span> jasne sekcje
-      </button>
+    <article class="article dark" id="articleTable">
+      <h2 class="article__header" id="articleHeader">Moja kolekcja</h2>
+      <table class="table">
+        <caption class="table__caption">
+          Personalna kolekcja i umiejętności
+        </caption>
+        <tr class="table__row">
+          <th class="table__cell table__header" scope="col">Nazwa kostki</th>
+          <th class="table__cell table__header" scope="col">Posiadam</th>
+          <th class="table__cell table__header" scope="col">
+            Trzymalem w rece
+          </th>
+          <th class="table__cell table__header" scope="col">Umiem ułżyć?</th>
+        </tr>
+        <tr class="table__row">
+          <th class="table__cell table__header" scope="row">2x2</th>
+          <td class="table__cell">❌</td>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">✅/❌</td>
+        </tr>
+        <tr class="table__row">
+          <th class="table__cell table__header" scope="row">3x3</th>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">✅(PB 18.98)</td>
+        </tr>
+        <tr class="table__row">
+          <th class="table__cell table__header" scope="row">4x4</th>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">✅/❌</td>
+        </tr>
+        <tr class="table__row">
+          <th class="table__cell table__header" scope="row">5x5</th>
+          <td class="table__cell">❌</td>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">❌</td>
+        </tr>
+        <tr class="table__row">
+          <th class="table__cell table__header" scope="row">Pyraminx</th>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">✅</td>
+          <td class="table__cell">❌</td>
+        </tr>
+      </table>
+    </article>
+
+    <footer class="footer dark" id="footer">
+      <h2 class="footer__header">Znajdziesz mnie tu:</h2>
+      <ul class="footer__list">
+        <li class="footer__listItem">
+          <a
+            class="listItem__link"
+            href="https://github.com/met3usz"
+            target="_blank"
+            ><img
+              class="listItem__image"
+              src="./svg/github.svg"
+              alt="GitHub"
+              target="_blank"
+          /></a>
+        </li>
+        <li class="footer__listItem">
+          <a
+            class="listItem__link"
+            href="https://www.instagram.com/mateusz.raw/"
+            target="_blank"
+            ><img
+              class="listItem__image"
+              src="./svg/instagram.svg"
+              alt="Instagram"
+          /></a>
+        </li>
+        <li class="footer__listItem">
+          <a
+            class="listItem__link"
+            href="https://www.linkedin.com/in/met3usz/"
+            target="_blank"
+            ><img
+              class="listItem__image"
+              src="./svg/linkedin-in.svg"
+              alt="LinkedIn"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
