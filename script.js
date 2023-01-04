@@ -2,7 +2,7 @@
   const button = document.querySelector('.js-button');
   const header = document.querySelector('.header');
   const main = document.querySelector('.main');
-  const footer = document.querySelector('.footer');
+  const article = document.querySelector('.article');
   const buttonSpan = document.querySelector('.js-buttonSpan');
 
   const spanButtonChange = () => {
@@ -14,7 +14,7 @@
   button.addEventListener('click', () => {
     header.classList.toggle('bright');
     main.classList.toggle('bright');
-    footer.classList.toggle('bright');
+    article.classList.toggle('bright');
 
     spanButtonChange(header);
   });
