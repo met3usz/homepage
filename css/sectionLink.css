@@ -1,0 +1,12 @@
+.section__link {
+  text-decoration: none;
+  color: rgb(47, 161, 255);
+}
+
+.section__link:visited {
+  color: rgb(110, 173, 245);
+}
+
+.section__link:hover {
+  color: rgb(66, 165, 245);
+}

@@ -1,0 +1,9 @@
+.article {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  overflow-x: auto;
+}
+.article__header {
+  margin-top: 0;
+}

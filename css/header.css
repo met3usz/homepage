@@ -2,8 +2,27 @@
   padding: 20px;
   margin: 20px 0;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .header__header {
   margin-top: 0;
+  text-align: center;
+}
+
+.header__image {
+  border: 5px solid rgb(110, 173, 245);
+  border-radius: 50%;
+}
+.main__header--second {
+  margin-top: 0;
+}
+
+@media (max-width: 450px) {
+  .header__image {
+    width: 300px;
+  }
 }

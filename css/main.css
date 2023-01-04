@@ -4,19 +4,14 @@
   border-radius: 15px;
 }
 
-.main__header {
+.main__section {
+  margin: 0;
+}
+
+.main__header--first {
   margin-top: 0;
 }
 
-.main__sourceLink {
-  text-decoration: none;
-  color: rgb(47, 161, 255);
-}
-
-.main__sourceLink:visited {
-  color: rgb(110, 173, 245);
-}
-
-.main__sourceLink:hover {
-  color: rgb(66, 165, 245);
+.main__header--second {
+  margin-top: 0;
 }
