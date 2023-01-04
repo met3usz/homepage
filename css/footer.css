@@ -2,4 +2,26 @@
   padding: 20px;
   margin: 20px 0;
   border-radius: 15px;
+  text-align: center;
+}
+
+.footer__header {
+  margin-top: 0;
+}
+
+.footer__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listItem__image {
+  width: 50px;
+}
+
+@media (max-width: 450px) {
+  .listItem__image {
+    width: 30px;
+  }
 }
