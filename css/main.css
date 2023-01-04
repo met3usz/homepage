@@ -1,0 +1,22 @@
+.main {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.main__header {
+  margin-top: 0;
+}
+
+.main__sourceLink {
+  text-decoration: none;
+  color: rgb(47, 161, 255);
+}
+
+.main__sourceLink:visited {
+  color: rgb(110, 173, 245);
+}
+
+.main__sourceLink:hover {
+  color: rgb(66, 165, 245);
+}

@@ -1,0 +1,21 @@
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__item {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: rgb(17, 195, 255);
+}
+
+.nav__link:visited {
+  color: rgb(0, 119, 159);
+}
+
+.nav__link:hover {
+  color: rgb(146, 228, 255);
+}

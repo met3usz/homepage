@@ -1,0 +1,28 @@
+.table__wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  margin: 10px 0;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+.table__cell {
+  border: 2px solid rgb(66, 66, 66);
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table__caption {
+  caption-side: top;
+  text-align: left;
+}
+
+.table__header {
+  background-color: rgb(110, 173, 245);
+}
+.table__row:nth-child(even) {
+  background-color: rgb(96, 125, 139);
+}
